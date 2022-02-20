@@ -18,7 +18,33 @@ TODO: Lets get some functionality in first before we can worry about that
 This repository contains the code for the main module, which is the only actually runnable .jar file in the project. If you want to start the server, launch this file.  
 
 **Maven**
-TODO: Setup maven
+Add the following entries to your pom.xml:
+1. Include repository:
+
+```XML
+<repositories>
+  <repository>
+    <id>CraftyServer-mvn-repo</id>
+    <url>https://github.com/CraftyServerMC/maven/raw/mvn-repo/</url>
+    <snapshots>
+      <enabled>true</enabled>
+      <updatePolicy>always</updatePolicy>
+    </snapshots>
+  </repository>
+</repositories>
+```
+2. Include artifact:
+
+```XML
+<dependencies>
+  <dependency>
+    <groupId>org.craftyserver</groupId>
+    <artifactId>craftyserver</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <scope>provided</scope>
+  </dependency>
+</dependencies>
+```
 
 **This module does the following:**
  - Provide launchable main class and main method *(Done, but can't be finalized until everything else is done)*
