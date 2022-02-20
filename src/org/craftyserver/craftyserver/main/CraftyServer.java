@@ -98,7 +98,7 @@ public class CraftyServer {
 		Log.log("Loading config...");
 		try {
 			configfile = new ConfigFile("server.config");
-			getMainModuleConfigSection().get("port").setDefaultValue(DEFAULTPORT);
+			getMainModuleConfigSection().get("serverport").setDefaultValue(DEFAULTPORT);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
