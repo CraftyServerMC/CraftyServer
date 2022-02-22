@@ -39,12 +39,9 @@ Once we hit a usable state in developement, there will be some form of installer
 This repository contains the code for the main module, which is the only actually runnable .jar file in the project. If you want to start the server, launch this file.  
 
 #### This module does the following:
- - Provide launchable main class and main method *(Done, but can't be finalized until everything else is done)*
- - Accept connections, recieve, parse and send packages to and from Minecraft Clients *(Done)*
- - Store and access parameters for different client connections *(Not started)*
+ - Provide launchable main class and main method *(Can't be finalized until everything else is done)*
  - Load, unload, enable and disable modules *(Not started)*
  - Provide Eventmanager & all classes needed for event management *(Works, but misses some features)*
- - Provide data type parser for Minecraft protocol *(VarInt and VarLong are done, others not started)*
  - Provide API to load & save config files *(Works, but misses some features; Might undergo some massive changes)*
  - Provide Logger *(Done)*
 
